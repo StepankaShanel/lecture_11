@@ -9,8 +9,9 @@ def recursive_nth_fibo(number):
 
 
 def main():
-    print(recursive_nth_fibo(10))
-
+    prvek = 5
+    posloupnost = [recursive_nth_fibo(number) for number in range(prvek + 1)]
+    print(posloupnost)
 
 if __name__ == "__main__":
     main()
